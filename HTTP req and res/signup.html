@@ -1,0 +1,165 @@
+<html>
+<body bgcolor="#63BFF0">
+<style>
+.main{
+width:100%;
+}
+input[type=text],input[type=password],input[type=Email]{
+width:25%;
+padding:10px;
+margin:15px;
+display:inline-block;
+border:none;
+background:#F3F6F8;
+font-size:16px;
+box-sizing:border-bolck;
+}
+input[type=number],select,input[type=date],input[type=tel]{
+width:25%;
+padding:10px;
+margin:15px;
+display:inline-block;
+border:none;
+background:#F3F6F8;
+font-size:16px;
+box-sizing:border-bolck;
+}
+.ss{
+font-size:20px;
+font-family:Times New Roman;
+text-align:center;
+color:white;
+}
+.s1{
+font-size:30px;
+font-family:Times New Roman;
+text-align:center;
+color:white;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover{
+opcity:1;
+}
+.resetbtn{
+  float: left;
+  width: 20%;
+  padding: 14px 20px;
+  background-color:#F64444;
+}
+.signupbtn {
+  float: right;
+  width: 20%;
+  padding: 14px 20px;
+  background-color:#6DC97B;
+}
+.container1{
+height:300px;
+padding:3px;
+padding:3px;
+width:50%;
+float:left;
+background:#63BFF0;
+}
+.container2{
+height:300px;
+padding:4px;
+width:48%;
+float:right;
+background:#63BFF0";
+}
+
+.header{
+width:100%;
+height:20%;
+}
+</style>
+<div class="main">
+<div class="header">
+<h1 class="s1">SignUp/Register</h1>
+<p class="ss">!Welcome,we are glad you are here!</p>
+</div>
+<div class="container1">
+<form action="succ1.html">
+<fieldset   style="border:5px solid #F3F6F80">
+<legend>Personal Details</legend>
+<label for="firstname"><b>First Name</b></label>
+<input type="text" id="firstname" name="firstname" placeholder="first name" required autofocus autocomplete="off">
+<label for="lastname"style="padding:5px"><b>Last Name</b></label>
+<input type="text" id="lastname" name="lastname" placeholder="last name" required autocomplete="off"><br>
+<label for="username"><b>Username</b></label>
+<input type="text" id="username" name="username" placeholder="Username" required autocomplete="off">
+<label for="Email"style="padding:5px"><b>Email Address</b></label>
+<input type="email" id="email" name="email" placeholder="Email" required autocomplete><br>
+<ul style="circle">
+<li style="color:thikgreen">You must use character[A-Z,a-z],symbol[@#$*&] and numbers[0-9] for password</li>
+</ul>
+<label for="password"><b>Password</b></label>
+<input type="password" id="pwt" name="pwt" placeholder="password" required>
+<label for="Confrim password"><b>Confrim Password</b></label>
+<input type="password" id="pwt"  name="pwt" placeholder="Confrim password" required>
+</div>
+<div class="container2">
+<fieldset   style="border:5px solid  #F3F6F80">
+<legend> Personal Details</legend>
+<label for="country"><b>Country</b></label>
+<select id="country" name="country"  placeholder="country">
+                <option value="India" checked>India</option>
+                <option value="Armerica">Armerica</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+				<option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+				<option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+				<option value="england">England</option>
+				<option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Greece">Greece</option>
+				<option value="london">London</option>
+				</select>
+<label for="gender"><b>Gender </b></label>
+<input type="radio" id="g" name="gender" value="m"style="cursor:pointer"/>
+<b>Male</b>
+<input type="radio" id="g" name="gender" value="f"style="cursor:pointer" checked>
+<b>Female</b>
+<input type="radio" id="g" name="gender" value="t" style="cursor:pointer"/>
+<b>Transgender</b><br>
+<label for="age"><b>Age</b></label>
+<input type="number" id="age" name="age" placeholder="age above 15" pattern="[0-9]{3}" min="15" required>
+<label for="brithday"><b>DOB</b></label>
+<input type="date" id="brithday" name="brithday" max="2050"><br>
+<label for="phone"><b>Phone</b></label>
+<input type="tel" id="phone" name="tel" placeholder="Phone" pattern="[0-9]{10}" autocomplete="off">
+<label for="address"><b>Address</b></label>
+<textarea   name="address" rows="5" cols="40" form="usrform" required> Address</textarea>
+</div>
+<p style="text-align:left">By creating an account you agree to our <a href=
+"https://www.fnp.com/info/terms-and-conditions"><style="color:#175363">Terms & condition</a>.</p>
+<input type="checkbox" checked="checked" name="remember" style="cursor:pointer"> Remember me</input>
+<div class="header">
+<button type="reset" value="reset" class="resetbtn">Reset</button>
+<button type="submit" value="Submit" class="signupbtn">Sign Up</button>
+</div>
+</form>
+<p class="ss">Do you have already account?then <a href="login.html" target="_blank">click here</a></p>
+</div>
+</body>
+</html>
+
